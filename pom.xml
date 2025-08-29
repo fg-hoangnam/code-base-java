@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     
     <!-- Parent Information -->
     <groupId>com.mycompany.base</groupId>
     <artifactId>java-base-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <scm>
         <connection>scm:git:git@github.com:fg-hoangnam/code-base-java.git</connection>
         <developerConnection>scm:git:git@github.com:fg-hoangnam/code-base-java.git</developerConnection>
         <url>https://github.com/fg-hoangnam/code-base-java</url>
-        <tag>HEAD</tag>
+        <tag>java-base-parent-1.0.0</tag>
     </scm>
     <packaging>pom</packaging>
     <name>java-base-parent</name>
@@ -53,7 +52,7 @@
         <junit-jupiter.version>5.10.2</junit-jupiter.version>
         <assertj.version>3.25.3</assertj.version>
         <mockito.version>5.8.0</mockito.version>
-        <testcontainers.version>1.19.6</testcontainers.version>
+        <testcontainers.version>1.21.3</testcontainers.version>
         <wiremock.version>3.4.2</wiremock.version>
         <rest-assured.version>5.4.0</rest-assured.version>
         
@@ -328,15 +327,15 @@
                             </goals>
                             <configuration>
                                 <rules>
-                                    <DependencyConvergence/>
+                                    <DependencyConvergence />
                                     <RequireMavenVersion>
                                         <version>[3.8.0,)</version>
                                     </RequireMavenVersion>
                                     <RequireJavaVersion>
                                         <version>[17,)</version>
                                     </RequireJavaVersion>
-                                    <BanDuplicatePomDependencyVersions/>
-                                    <RequireUpperBoundDeps/>
+                                    <BanDuplicatePomDependencyVersions />
+                                    <RequireUpperBoundDeps />
                                 </rules>
                                 <fail>true</fail>
                             </configuration>
